@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sombrar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto py-10">
+    <!-- Sombras en el contenedor -->
+    <button class="bg-orange-400 text-white w-32 shadow-md shadow-yellow-400">Submit</button>
+    <button class="bg-orange-400 text-white w-32 shadow-[5px_5px_5px_0_hsl(45,100%,20%)]">Submit</button>
+    <button class="bg-blue-500 text-white w-32 shadow-md active:shadow-blue-400">Submit</button>
+    <button class="bg-red-500 text-white w-32 shadow-none lg:shadow-md lg:shadow-stone-900">Submit</button>
+
+    <hr class="my-10" />
+
+    <!-- Sombras en imagenes -->
+    <img src="./assets/imgs/cat.jpg" class="mb-10 max-w-full w-52 drop-shadow-2xl" alt="It's a cat">
+    <img src="./assets/imgs/dolphin.png" class="max-w-full w-52 drop-shadow-[5px_20px_10px_hsl(220,100%,20%)]" alt="It's a cat">
+  </div>
+
+  
+</body>
+</html>

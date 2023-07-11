@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen pt-1 bg-no-repeat bg-gradient-to-br from-cyan-300 to-blue-400">
+  <div class="container mx-auto">
+    <!-- Filtros -->
+    <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover"></div>
+    <hr class="my-10" />
+    <div class="space-y-10">
+      <!-- 
+        filter -> esta propiedad css que aplica gráficos, senfoque o cambio de color a un elemnto.
+          Los filtros se usan comúnmente para ajustar la representación de imágenes, fondos y bordes.
+          Esta propiedad afecta los elementos hijos, a excepcion drop-shadow()
+       -->
+      <h1 class="text-2xl text-center text-slate-800 font-bold capitalize">filtros</h1>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      drop-shadow-[5px_5px_5px_black]"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      blur-sm"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      sepia"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      saturate-150"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      contrast-200"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      grayscale"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      hue-rotate-60"></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      invert"><p>hola</p></div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover 
+      brightness-90"></div>
+    </div>
+
+    <!-- Backdrop -->
+    <!-- 
+      backdrop-filter -> esta propiedad css permite aplicar los mismos efectos de la propiedad
+      filter, pero detrás de un elemento.
+    -->
+    <hr class="my-10" />
+    <div class="space-y-10">
+      <h1 class="text-2xl text-center text-slate-800 font-bold capitalize">back drop</h1>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-blur-md">Soy un gatito</p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-sepia">Soy un gatito</p>
+     </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-saturate-200">Soy un gatito</p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-contrast-200">Soy un gatito</p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-grayscale">Soy un gatito</p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-hue-rotate-180"></p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-invert">Soy un gatito</p>
+      </div>
+      <div class="mx-auto w-52 h-52 bg-[url('./assets/imgs/cat.jpg')] bg-no-repeat bg-cover">
+        <p class="mx-auto w-1/2 h-1/2 backdrop-brightness-100"></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

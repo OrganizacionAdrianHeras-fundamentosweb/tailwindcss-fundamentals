@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding, Margin and Space</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    #padding div {
+      display: inline-block;
+      height: 200px;
+      background-color: crimson;
+      margin-bottom: 100px;
+    }
+
+    #margin div {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background: lightseagreen;
+      margin-bottom: 100px;
+    }
+
+    #space div {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+    }
+
+  </style>
+  <!--
+    Padding
+      p
+      pt
+      pr
+      pb
+      pl
+      px
+      py
+
+    Margin
+      m
+      mt
+      ml
+      mb
+      mr
+      mx
+      my
+      m-auto
+      my-auto
+      mx-auto
+    
+    Space -> Da espacio a los hijos de un padre aplicando margin en x o y
+      space-x-10 -> aplica margin left a los hijos
+      space-y-10 -> aplica margin top a los hijos
+  -->
+</head>
+<body>
+  <h1>Padding</h1>
+  <div id="padding">
+    <div class="pt-12 pb-24 pl-48 pr-20">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </div>
+  </div>
+
+  <h1>Margin</h1>
+  <div id="margin">
+    <div class="mb-20 md:ml-20">asd</div>
+  </div>
+
+  <h1>Space</h1>
+  <div id="space" class="space-y-10">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>

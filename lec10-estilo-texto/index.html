@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo texto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto py-10">
+    <!-- Letter spacing -->
+    <h1 class="text-3xl">Letter spacing</h1>
+    <p class="tracking-tighter">Lorem ipsum, dolor sit amet.</p>
+    <p class="tracking-tigh">Lorem ipsum, dolor sit amet.</p>
+    <p class="tracking-normal">Lorem ipsum, dolor sit amet.</p>
+    <p class="tracking-wide">Lorem ipsum, dolor sit amet.</p>
+    <p class="tracking-wider">Lorem ipsum, dolor sit amet.</p>
+    <p class="tracking-widest">Lorem ipsum, dolor sit amet.</p>
+
+    <hr class="my-10" />
+
+    <!-- Line Height -->
+    <h1 class="text-3xl">Line Height</h1>
+    <p class="leading-3">Lorem ipsum, dolor sit amet.</p>
+    <p class="leading-7">Lorem ipsum, dolor sit amet</p>
+    <p class="leading-10">Lorem ipsum, dolor sit amet</p>
+
+    <hr class="my-10" />
+
+    <!-- Alineado -->
+    <h1 class="text-3xl">Text Align</h1>
+    <p class="text-left">Lorem ipsum, dolot sit amet</p>
+    <p class="text-center">Lorem ipsum, dolot sit amet</p>
+    <p class="text-right">Lorem ipsum, dolot sit amet</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, molestias voluptates repudiandae ex quos earum, sit quod a iusto, eveniet pariatur architecto eaque maxime laudantium! Labore quidem suscipit placeat nostrum?</p>
+
+    <hr class="my-10" />
+
+    <!-- Text color -->
+    <h1 class="text-4xl">Text color</h1>
+    <p class="text-gray-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-red-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-yellow-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-green-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-blue-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-indigo-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-rose-500">Lorem ipsum dolor sit amet.</p>
+    <p class="text-[#bcdddf]">Lorem ipsum dolor sit amet.</p>
+
+    <hr class="my-10">
+
+    <!-- Text decoration -->
+    <h1 class="text-3xl">Text Decoration</h1>
+    <p class="overline">Lorem ipsum dolor sit amet.</p>
+    <p class="line-through">Lorem ipsum dolor sit amet.</p>
+    <p class="underline">Lorem ipsum dolor sit amet.</p>
+    <p class="no-underline">Lorem ipsum dolor sit amet.</p>
+    <a href="#" class="text-blue-400 no-underline hover:underline">Lorem ipsum dolor sit amet.</a>
+
+    <hr class="my-10" />
+
+    <!-- Text transform -->
+    <h1 class="text-3xl">Text transform</h1>
+    <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+    <p class="lowercase">Lorem ipsum dolor sit amet.</p>
+    <p class="capitalize">Lorem ipsum dolor sit amet.</p>
+
+    <hr class="my-10" />
+
+    <!-- Text overflow -->
+    <!-- 
+      text-overflow: ellipsis -> agrega un '...' a las palabras que no quepan
+        en el contenedor. Para funciona necesita de un overflow: hidden;
+      text-overflow: clip -> a partir de un caracter deja de mostrar la parte de texto 
+        que no quepa en el contenedor
+     -->
+    <h1 class="text-4xl">Text Overflow</h1>
+    <p class="mb-10 w-40 bg-blue-100 truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut odio et sapiente consequatur assumenda facere sunt omnis consequuntur labore rerum atque veritatis magnam tenetur deserunt, ullam eum nostrum iste?</p>
+    <p class="mb-10 w-40 bg-green-100 overflow-hidden text-ellipsis">Magni quibusdam magnamasddskjgdfjgkdfhjkgdfg rerum architecto doloribus provident nobis hic dicta velit reprehenderit. Sapiente quibusdam adipisci ullam possimus molestias esse, ipsum quos, quia eveniet, vitae saepe consequatur unde perferendis beatae quae!</p>
+    <p class="mb-10 w-40 bg-rose-100 overflow-hidden text-clip">Lorem ipsum dolorakahdasfjhagsdxciouiosdfuiosduf sit amet consectetur adipisicing elit. Asperiores aut odio et sapiente consequatur assumenda facere sunt omnis consequuntur labore rerum atque veritatis magnam tenetur deserunt, ullam eum nostrum iste?</p>
+    <p class="mb-10 w-40 bg-blue-100 truncate md:text-clip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut odio et sapiente consequatur assumenda facere sunt omnis consequuntur labore rerum atque veritatis magnam tenetur deserunt, ullam eum nostrum iste?</p>
+
+    <hr class="my-10" />
+
+    <!-- text Ident -->
+    <h1>Text Ident</h1>
+    <p class="first-letter:font-bold indent-2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iusto perferendis atque quis ab autem repellat impedit ad asperiores minima nobis nemo praesentium, fugiat laboriosam non delectus. Reprehenderit, illo blanditiis.
+    </p>
+    <p class="first-letter:font-bold indent-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro quam illo saepe nemo iusto molestias fugit quas, ratione, nam fuga sequi amet culpa dolorem! Laboriosam ut obcaecati unde. Vero.
+    </p>
+
+  </div>
+
+
+
+
+</body>
+</html>

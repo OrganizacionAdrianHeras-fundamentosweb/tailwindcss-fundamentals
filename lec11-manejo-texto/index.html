@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manejo de texto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Vertical Aligment -->
+    <h1 class="text-3xl">Vertical Aligment</h1>
+    <label for="tres" class="">Male</label>
+    <input type="checkbox" id="tres" class="align-top">
+    <label for="cuatro" class="">Male</label>
+    <input type="checkbox" id="cuatro" class="align-middle">
+    <label for="cinco" class="">Male</label>
+    <input type="checkbox" id="cinco" class="align-bottom">
+
+    <hr class="my-10" />
+
+    <!-- Break -->
+    <!-- 
+      word-wrap: break-word; -> quiebra las palabras que no quepan en el contenedor
+        para que se muestren en otra línea.
+      word-break: all; -> Quiebra las silábas que no quepan en el contenedor
+     -->
+    <p class="w-40 bg-blue-500 text-white break-words">
+      Lorem ipsum dolor sit amet consectetur aasdasdasdasdasdasdasddipisicing elit. Numquam voluptate mollitia placeat natus vel recusandae repudiandae. Cupiditate inventore, amet eaque aliquid repudiandae iste, nisi quo deserunt tempore, mollitia voluptas perspiciatis!
+    </p>
+    <p class="w-40 bg-yellow-200 break-all">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam illo a veniam officiis nobis rerum necessitatibus quis? Unde assumenda inventore enim obcaecati laudantium dolorum maxime architecto eligendi velit earum.
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Width and Height</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body {
+      color: #fff;
+    }
+    .container {
+      height: 100vh;
+      background-color: #CCC;
+    }
+
+    .container > div {
+      background-color: hsl(50 100% 50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container space-y-10">
+    <!-- <div class="w-96 h-40 mb-10">Tamaño fijo</div> -->
+    <!-- <div class="w-9/12 h-3/6 mb-10">Tamaño porcentaje</div> -->
+    <!-- <div class="w-screen h-screen">Pantalla completa</div> -->
+    <div class="w-96 h-40">Tamaño fijo</div>
+    <div class="w-9/12 h-3/6">Tamaño porcentaje</div>
+    <div class="w-screen h-screen">Patalla completa</div>
+  </div>
+</body>
+</html>
