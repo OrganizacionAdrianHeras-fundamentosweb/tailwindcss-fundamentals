@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-[0.1px] min-h-screen space-y-10 bg-gradient-to-tl from-stone-900/50 to-stone-300/50 text-white">
+  <div class="container mx-auto mt-10 p-2 h-96 bg-blue-900 grid grid-cols-4 grid-rows-3 gap-x-2 gap-y-2">
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">1</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">3</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">4</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">5</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">7</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">8</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">9</div>
+  </div>
+  <div class="container mx-auto p-2 h-[30rem] bg-pink-900 grid grid-cols-3 gap-10 grid-flow-row-dense">
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">1</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg col-start-1 col-span-2">3</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">4</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg col-start-2 col-end-4 row-start-1 row-end-5">5</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">7</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg">8</div>
+    <div class="bg-purple-500 flex justify-center items-center border rounded-lg col-span-full">9</div>
+  </div>
+  <div class="container mx-auto mt-10 p-2 h-96 bg-yellow-700 grid grid-cols-3 grid-rows-3 justify-items-center items-center">
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg self-end">1</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg justify-self-end">3</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">4</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg justify-self-start">5</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">7</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">8</div>
+    <div class="w-20 h-20 bg-yellow-500 flex justify-center items-center border rounded-lg">9</div>
+  </div>
+  <div class="container mx-auto mt-10 p-2 h-96 bg-red-900 grid grid-cols-3 grid-rows-3 place-items-center">
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">1</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg place-self-start">3</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">4</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg place-self-end">5</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">7</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">8</div>
+    <div class="w-20 h-20 bg-pink-500 flex justify-center items-center border rounded-lg">9</div>
+  </div>
+  <div class="container mx-auto mt-10 p-2 h-96 bg-green-900 grid grid-cols-[repeat(3,10rem)] grid-rows-[repeat(3,5rem)] gap-x-2 justify-center content-around">
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">1</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">3</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">4</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">5</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">7</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">8</div>
+    <div class="bg-green-500 flex justify-center items-center border rounded-lg">9</div>
+  </div>
+  <div class="container mx-auto mt-10 p-2 h-96 bg-yellow-950 grid grid-cols-[repeat(3,10rem)] grid-rows-[repeat(3,5rem)] place-content-evenly">
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">1</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">2</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">3</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">4</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">5</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">6</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">7</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">8</div>
+    <div class="bg-yellow-700 flex justify-center items-center border rounded-lg">9</div>
+  </div>
+  <div class="container mx-auto mt-10 p-2 h-96 bg-blue-900 grid gap-2 grid-cols-3 grid-rows-2 auto-rows-[5rem]">
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">1</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">2</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-2">3</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-1">4</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-first">5</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg">6</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-first">7</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-last">8</div>
+    <div class="bg-cyan-500 flex justify-center items-center border rounded-lg order-last">9</div>
+  </div>
+</body>
+</html>
