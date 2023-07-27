@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply 2xl:text-center 3xl:text-center bg-primary p-4.5
+}

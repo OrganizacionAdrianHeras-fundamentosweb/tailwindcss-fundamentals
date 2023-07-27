@@ -1,0 +1,23 @@
+@layer components {
+  .dropdown {
+    @apply relative flex justify-center items-center p-0;
+  }
+
+  .row {
+    @apply p-2 border-l border-stone-300;
+  }
+
+  .dropdown-body {
+    @apply absolute top-full hidden group-focus:block w-full text-left shadow-md mt-2 rounded border bg-gray-600;
+  }
+
+  .dropdown-body .list {
+    @apply divide-y divide-gray-500;
+  }
+
+  .dropdown-body .list .list-items {
+    @apply pl-4 py-1 hover:bg-gray-500;
+  }
+
+
+}

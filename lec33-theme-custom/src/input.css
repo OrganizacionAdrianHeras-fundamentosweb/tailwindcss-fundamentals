@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply sm:text-center md:text-left lg:text-right
+}
+
+.text-link {
+  @apply text-blue-dark bg-blue-light
+}
+
+.espaciado {
+  @apply p-1.5 pt-1.5 m-1.5 w-1.5
+}

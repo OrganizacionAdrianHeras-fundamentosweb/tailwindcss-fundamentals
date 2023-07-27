@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+Funciones 
+
+@screen -> permite extraer valores del tema de screens
+theme -> permite extraer valores del tema de talwind para poder
+usarlo en mis clases personalizadas.
+*/
+@screen 2xl {
+  .bg-negro {
+    background-color: #000;
+  }
+}
+
+.content-area {
+  color: theme('colors.red.100');
+  width: theme('spacing.52');
+}

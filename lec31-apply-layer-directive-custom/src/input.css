@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+Apply -> Directiva que permite de forma interna aplicar distintas clases de tailwind agrupadas
+  en clases personalizada
+Layer -> Permite definir para que directiva (base, components o utilities), estas creando estilos personalizados
+*/
+
+
+/* layer */
+@layer base {
+  a {
+    @apply text-center text-red-500
+  }
+}
+
+@layer components {
+  .btn {
+    @apply w-32 h-10 rounded-lg font-extrabold
+  }
+
+  .btn-red {
+    @apply bg-red-500 text-stone-50 hover:bg-red-900
+  }
+
+  .btn-scale {
+    @apply hover:scale-125 transition duration-500 ease-out
+  }
+}
+
+@layer utilities {
+  .p-89 {
+    @apply p-5
+  }
+}
+
+
